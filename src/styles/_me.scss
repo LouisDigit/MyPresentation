@@ -1,0 +1,136 @@
+.me-page {
+  border-top: 1px solid $primaryColor;
+  width: 100%;
+  height: 160vh;
+  background-color: $backgroundColor;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  .me-page-nav {
+    width: 20%;
+    height: 100%;
+    background-image: url("./../../public/media/me-nav-background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .me-page-content {
+    border-left: 1px solid $primaryColor;
+    width: 80%;
+    height: 100%;
+    .me-presentation {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      .me-presentation-txt {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        h3 {
+          font-style: italic;
+          color: $primaryColor;
+        }
+      }
+      img {
+        box-shadow: $boxShadow;
+        border-radius: 50px;
+        width: 150px;
+        height: 150px;
+        display: block;
+        margin: auto;
+        transition: ease 0.2s;
+        &:hover {
+          width: 170px;
+          height: 170px;
+        }
+      }
+    }
+    .me-experiences {
+      h1 {
+        text-align: center;
+        margin-top: 1rem;
+        color: $primaryColor;
+      }
+      .me-experiences-item {
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        h1 {
+          text-align: start;
+          font-size: 2rem;
+        }
+        .item-txt {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          h3 {
+            font-size: 1.5rem;
+            font-style: italic;
+          }
+          .list-techno {
+            display: flex;
+            flex-direction: row;
+            i {
+              margin-left: 1rem;
+              font-size: 1.5rem;
+              color: $primaryColor;
+            }
+          }
+        }
+        .item-img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 20%;
+          img {
+            border-radius: 10px;
+            width: 100px;
+          }
+        }
+      }
+    }
+    .me-hobbies {
+      h1 {
+        text-align: center;
+        color: $primaryColor;
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+      }
+      .list-hobbies {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        .hobbies-item {
+          width: 25%;
+          display: flex;
+          flex-direction: column;
+          h3 {
+            text-align: center;
+          }
+          i {
+            font-size: 5rem;
+            color: $primaryColor;
+            text-align: center;
+          }
+          .line {
+            background-color: $primaryColor;
+            width: 30%;
+            height: 3px;
+            display: block;
+            margin: auto;
+            margin-top: 1rem;
+            transition: ease 0.3s;
+          }
+          &:hover {
+            .line {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

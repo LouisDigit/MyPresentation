@@ -1,0 +1,70 @@
+.landing-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-image: url(./../../public/media/landing-page.webp);
+  background-size: cover;
+  .landing-nav {
+    width: 20%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    ul {
+      position: fixed;
+      padding-left: 1rem;
+      li {
+        padding: 3px;
+        font-size: 1.3rem;
+        transition: ease 0.2s;
+        &:hover {
+          cursor: pointer;
+          font-size: 1.5rem;
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+  .landing-me {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .landing-me-content {
+      margin-right: 5rem;
+
+      h1 {
+        font-size: 5rem;
+        font-weight: 300;
+        text-align: center;
+      }
+      h3 {
+        font-size: 3rem;
+        font-weight: 300;
+        text-align: center;
+        font-style: italic;
+      }
+      a {
+        display: block;
+        margin: 1rem auto;
+        width: 150px;
+        transition: ease 0.2s;
+        &:focus {
+          box-shadow: none;
+        }
+        &:active {
+          color: $black;
+        }
+        &:hover {
+          font-size: 1.1rem;
+          width: 170px;
+        }
+      }
+    }
+  }
+}
