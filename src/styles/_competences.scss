@@ -1,4 +1,122 @@
-.competences-page {
+@import "./animation";
+
+.competence-content {
+  border-bottom: 1px solid $primaryColor;
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-image: url("./../../public/media/background-competence.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .competence-nav {
+    width: 20%;
+    height: 100%;
+  }
+  .competence-main-content {
+    display: flex;
+    flex-direction: column;
+    .competence-items {
+      height: 70%;
+      width: 100%;
+      display: flex;
+      padding: 2rem;
+      flex-direction: row;
+      .competence-langages {
+        .langage-item {
+          padding: 0.5rem 0;
+          display: flex;
+          flex-direction: row;
+          h3 {
+            width: 200px;
+            margin-right: 3rem;
+          }
+          .logo {
+            width: 40px;
+            height: 40px;
+            i {
+              font-size: 2rem;
+              margin-right: 2rem;
+            }
+            img {
+              width: 32px;
+              height: 32px;
+            }
+          }
+
+          .pro {
+            width: 12rem;
+            height: 3px;
+            background-color: $primaryColor;
+            margin: auto;
+            margin-left: 5rem;
+            animation: progress-bar 1000ms;
+          }
+          .semi-pro {
+            width: 10rem;
+            height: 3px;
+            background-color: $primaryColor;
+            margin: auto;
+            margin-left: 5rem;
+            animation: progress-bar 1000ms;
+          }
+          .intermediaire {
+            width: 8rem;
+            height: 3px;
+            background-color: $primaryColor;
+            margin: auto;
+            margin-left: 5rem;
+            animation: progress-bar 1000ms;
+          }
+        }
+      }
+      .competences-autre {
+        height: 100%;
+        h1 {
+          text-align: center;
+          font-size: 2rem;
+        }
+        .liste-autre {
+          display: flex;
+          flex-direction: row;
+          height: 100%;
+          width: 100%;
+          ul {
+            margin-left: 5rem;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            li {
+              font-size: 1.2rem;
+              padding: 0.5rem 0;
+            }
+          }
+        }
+      }
+    }
+    .competence-projet {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 30%;
+      h1 {
+        text-align: center;
+      }
+      .list-projet {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: space-between;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        li {
+          padding: 0.5rem 0;
+          color: $primaryColor;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
 }
