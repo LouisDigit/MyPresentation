@@ -21,16 +21,25 @@ const Contact = () => {
           </div>
           <div className="separator"></div>
           <div className="social">
-            <a href="https://twitter.com/LouisVnse" target="_blank">
+            <a
+              href="https://twitter.com/LouisVnse"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i class="fa-brands fa-twitter"></i>
             </a>
-            <a href="https://github.com/LouisDigit" target="_blank">
+            <a
+              href="https://github.com/LouisDigit"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i class="fa-brands fa-github"></i>
             </a>
 
             <a
               href="https://www.linkedin.com/in/louis-vanoise-551493233/"
               target="_blank"
+              rel="noreferrer"
             >
               <i class="fa-brands fa-linkedin"></i>
             </a>
