@@ -11,18 +11,21 @@
 
 @include xs {
   .footer {
-    display: none;
+    p {
+      text-align: center;
+    }
   }
 }
 
 @include sm {
   .footer {
-    display: none;
+    p {
+      text-align: center;
+    }
   }
 }
 
 @include md {
   .footer {
-    display: none;
   }
 }

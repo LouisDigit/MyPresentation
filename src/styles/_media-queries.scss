@@ -5,7 +5,7 @@
 }
 
 @mixin sm {
-  @media (max-width: 821px) {
+  @media (min-width: 481px) and (max-width: 821px) {
     @content;
   }
 }

@@ -123,13 +123,68 @@
 
 @include xs {
   .competence-content {
-    display: none;
+    height: 175vh;
+    .competence-nav {
+      display: none;
+    }
+    .competence-main-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .competence-items {
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+        .competence-langages {
+          width: 100%;
+          .langage-item {
+            h3 {
+              width: 200px;
+              margin-right: 3rem;
+            }
+          }
+          .pro,
+          .semi-pro,
+          .intermediaire {
+            display: none;
+          }
+        }
+        .competences-autre {
+          margin-top: 1rem;
+          h1 {
+            font-size: 1.5rem;
+          }
+          .liste-autre {
+            height: auto;
+            ul {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @include sm {
   .competence-content {
-    display: none;
+    width: 100%;
+    flex-direction: row;
+    .competence-nav {
+      width: 20%;
+    }
+    .competence-main-content {
+      width: 80%;
+      .competence-items {
+        flex-direction: column;
+        .competences-autre {
+          margin-top: 2rem;
+        }
+      }
+      .competence-projet {
+        margin-top: 2rem;
+      }
+    }
   }
 }
 

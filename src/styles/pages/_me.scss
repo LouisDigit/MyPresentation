@@ -140,18 +140,79 @@
 
 @include xs {
   .me-page {
-    display: none;
+    height: auto;
+    .me-page-nav {
+      display: none;
+    }
+    .me-page-content {
+      border-left: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .me-presentation {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .me-presentation-txt {
+          width: 100%;
+        }
+      }
+      .me-experiences {
+        display: flex;
+        flex-direction: column;
+        .me-experiences-item {
+          display: flex;
+          flex-direction: column;
+          .item-txt {
+            width: 100%;
+            .list-techno {
+              width: 100%;
+              justify-content: space-evenly;
+            }
+          }
+          .item-img {
+            display: block;
+            margin: auto;
+            margin-top: 2rem;
+          }
+        }
+      }
+      .me-hobbies {
+        .list-hobbies {
+          flex-direction: column;
+          .hobbies-item {
+            width: 100%;
+            height: auto;
+            padding: 1.5rem;
+          }
+        }
+      }
+    }
   }
 }
 
 @include sm {
   .me-page {
-    display: none;
+    height: 140vh;
+    .me-page-nav {
+      width: 30%;
+    }
+    .me-page-content {
+      .me-hobbies {
+        .list-hobbies {
+          .hobbies-item {
+            h3 {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 @include md {
   .me-page {
-    display: none;
+    height: 240vh;
   }
 }

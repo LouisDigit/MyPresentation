@@ -49,18 +49,32 @@
 
 @include xs {
   .contact-content {
-    display: none;
+    border-bottom: 1px solid $primaryColor;
+    height: auto;
+    .contact-nav {
+      display: none;
+    }
+    .contact-main-content {
+      width: 100%;
+      padding: 2rem;
+      .contact-me {
+        height: auto;
+        font-size: 1.5rem;
+        i {
+          width: 30px;
+          margin-right: 0.3rem;
+        }
+      }
+    }
   }
 }
 
 @include sm {
   .contact-content {
-    display: none;
   }
 }
 
 @include md {
   .contact-content {
-    display: none;
   }
 }

@@ -29,18 +29,41 @@
 
 @include xs {
   .portfolio-content {
-    display: none;
+    height: auto;
+    .portfolio-nav {
+      display: none;
+    }
+    .portfolio-main-content {
+      width: 100%;
+      .carousel {
+        height: 100%;
+        .carousel-inner {
+          img {
+            height: 100%;
+          }
+        }
+      }
+      h1 {
+        margin-left: 2rem;
+        margin-top: 1rem;
+      }
+    }
   }
 }
 
 @include sm {
   .portfolio-content {
-    display: none;
+    height: auto;
+    .portfolio-nav {
+      width: 25%;
+    }
+    .portfolio-main-content {
+      width: 75%;
+    }
   }
 }
 
 @include md {
   .portfolio-content {
-    display: none;
   }
 }

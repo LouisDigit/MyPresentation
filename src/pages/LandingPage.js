@@ -10,7 +10,7 @@ const LandingPage = () => {
           </a>
 
           <a href="#me">
-            <li>Me</li>
+            <li>Moi</li>
           </a>
           <a href="#competences">
             <li>Compétences</li>

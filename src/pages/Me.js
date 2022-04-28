@@ -84,7 +84,7 @@ const Me = () => {
               <span className="line"></span>
             </div>
             <div className="hobbies-item">
-              <h3>Informatique</h3>
+              <h3>Tech</h3>
               <i className="fa-solid fa-computer"></i>
               <span className="line"></span>
             </div>

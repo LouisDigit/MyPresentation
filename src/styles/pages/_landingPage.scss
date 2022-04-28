@@ -6,6 +6,7 @@
   background-image: url(./../../../public/media/landing-page.webp);
   background-size: cover;
   .landing-nav {
+    z-index: 1000;
     width: 20%;
     height: 100%;
     margin: auto;
@@ -38,7 +39,6 @@
     align-items: center;
     .landing-me-content {
       margin-right: 5rem;
-
       h1 {
         font-size: 5rem;
         font-weight: 300;
@@ -72,18 +72,48 @@
 
 @include xs {
   .landing-page {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    .landing-nav {
+      width: 100%;
+      height: 20%;
+      ul {
+        display: flex;
+        flex-direction: row;
+        li {
+          font-size: 1rem;
+          &:hover {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    .landing-me {
+      width: 100%;
+      height: 80%;
+      .landing-me-content {
+        padding: 3rem;
+        margin-right: 0;
+        h1 {
+          font-size: 3rem;
+        }
+        h3 {
+          font-size: 2rem;
+        }
+        a {
+          margin-top: 2rem;
+        }
+      }
+    }
   }
 }
 
 @include sm {
   .landing-page {
-    display: none;
-  }
-}
-
-@include md {
-  .landing-page {
-    display: none;
+    ul {
+      li {
+        font-size: 1.3rem;
+      }
+    }
   }
 }
