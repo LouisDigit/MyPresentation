@@ -3,7 +3,7 @@
   height: 80vh;
   display: flex;
   flex-direction: row;
-  background-image: url(./../../public/media/contact-background.avif);
+  background-image: url(./../../../public/media/contact-background.avif);
   background-size: cover;
   background-repeat: no-repeat;
   .contact-nav {
@@ -44,5 +44,23 @@
         }
       }
     }
+  }
+}
+
+@include xs {
+  .contact-content {
+    display: none;
+  }
+}
+
+@include sm {
+  .contact-content {
+    display: none;
+  }
+}
+
+@include md {
+  .contact-content {
+    display: none;
   }
 }

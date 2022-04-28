@@ -1,7 +1,9 @@
 @import "settings";
-@import "./landingPage";
-@import "./me";
-@import "./competences";
-@import "./portfolio";
-@import "./contact";
-@import "./footer";
+@import "./media-queries";
+@import "./error";
+@import "./pages/landingPage";
+@import "./pages/me";
+@import "./pages/competences";
+@import "./pages/portfolio";
+@import "./pages/contact";
+@import "./pages/footer";

@@ -1,4 +1,4 @@
-@import "./animation";
+@import "./../animation";
 
 .competence-content {
   border-bottom: 1px solid $primaryColor;
@@ -6,7 +6,7 @@
   height: 100vh;
   display: flex;
   flex-direction: row;
-  background-image: url("./../../public/media/background-competence.avif");
+  background-image: url("./../../../public/media/background-competence.avif");
   background-size: cover;
   background-repeat: no-repeat;
   .competence-nav {
@@ -118,5 +118,23 @@
         }
       }
     }
+  }
+}
+
+@include xs {
+  .competence-content {
+    display: none;
+  }
+}
+
+@include sm {
+  .competence-content {
+    display: none;
+  }
+}
+
+@include md {
+  .competence-content {
+    display: none;
   }
 }

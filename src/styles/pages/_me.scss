@@ -10,7 +10,7 @@
   .me-page-nav {
     width: 20%;
     height: 100%;
-    background-image: url("./../../public/media/me-nav-background.jpeg");
+    background-image: url("./../../../public/media/me-nav-background.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -135,5 +135,23 @@
         }
       }
     }
+  }
+}
+
+@include xs {
+  .me-page {
+    display: none;
+  }
+}
+
+@include sm {
+  .me-page {
+    display: none;
+  }
+}
+
+@include md {
+  .me-page {
+    display: none;
   }
 }

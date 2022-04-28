@@ -26,3 +26,21 @@
     }
   }
 }
+
+@include xs {
+  .portfolio-content {
+    display: none;
+  }
+}
+
+@include sm {
+  .portfolio-content {
+    display: none;
+  }
+}
+
+@include md {
+  .portfolio-content {
+    display: none;
+  }
+}

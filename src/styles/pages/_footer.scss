@@ -8,3 +8,21 @@
   justify-content: center;
   font-size: 1.2rem;
 }
+
+@include xs {
+  .footer {
+    display: none;
+  }
+}
+
+@include sm {
+  .footer {
+    display: none;
+  }
+}
+
+@include md {
+  .footer {
+    display: none;
+  }
+}
