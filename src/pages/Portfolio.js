@@ -75,7 +75,7 @@ const Portfolio = () => {
             <span className="sr-only">Next</span>
           </a>
         </div>
-        <h1>Un aperçu de certain projets...</h1>
+        <h1>Un aperçu de certains projets...</h1>
       </div>
     </div>
   );
