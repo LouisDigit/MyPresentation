@@ -5,7 +5,6 @@ import Footer from "./pages/Footer";
 import LandingPage from "./pages/LandingPage";
 import Me from "./pages/Me";
 import Portfolio from "./pages/Portfolio";
-import Error from "./pages/Error";
 
 const App = () => {
   return (
@@ -16,7 +15,6 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer />
-      <Error />
     </>
   );
 };
